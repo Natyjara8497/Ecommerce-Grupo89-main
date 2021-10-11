@@ -1,10 +1,11 @@
 <template>
   <BasicLayouts>
     <div class="title">
-      <h1>{{tecnologia}}</h1>
+      <h1>{{categoria}}</h1>
     </div>
     <div class="ui grid">
       <div
+     
         class="sixten wide mobile eight wide tablet four wide computer column"
         v-for="product in products"
         :key="product.id"
@@ -46,7 +47,10 @@ export default {
     const getProduts = async (category) => {
       const response = await getProductsCategory(category);
       products.value = response;
+       
     };
+
+     
 
     return {
       getProduts,

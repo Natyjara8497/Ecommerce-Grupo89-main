@@ -27,9 +27,10 @@
                                    </router-link>
                                     <ul> 
                                    <li v-for="category in categories" :key="category.id">
-                                      <router-link class="item" :to="category.slug">
+                                     <router-link class="item" :to="category.slug">
                                         {{ category.title }}
-                                      </router-link>
+                                        
+                                        </router-link>
                                     </li>
                                     </ul>
                                 </li> 

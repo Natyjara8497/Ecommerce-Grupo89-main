@@ -8,7 +8,7 @@
 
       
          <div class="services">
-             <h1>Compra Productos Inteligentes</h1>
+             <h1>Soluciones Inteligentes</h1>
         </div>
 
         <section  class="services-section">
