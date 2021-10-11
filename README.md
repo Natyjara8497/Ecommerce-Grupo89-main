@@ -1,4 +1,4 @@
-# Ecommerce-Grupo89
+# Ecommerce-Grupo89 Wilmar Rojas
 #### Comandos para instalar node_modules
 
 -  Abrir una terminal dentro de la carpeta del proyecto y ejecutar el comando npm install.
