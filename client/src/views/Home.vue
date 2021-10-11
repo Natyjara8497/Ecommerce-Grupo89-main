@@ -1,18 +1,12 @@
 <template>
   <BasicLayouts>
 </BasicLayouts>
-<body>
-  
-  
+
             <div class="banner">
               
-                <img src="../assets/domotica1.jpg" alt="Sisteling" width="1900" height="500"  >
-               
             </div>
 
-       
-
-       
+      
          <div class="services">
              <h1>Compra Productos Inteligentes</h1>
         </div>
@@ -25,34 +19,34 @@
                 
 
                 <router-link class="item" to="/redes-inalambricas" > 
-                  <img  src="../assets/antenas8.jpg" alt="Redes Inalambricas" >
+                  <img  src="../assets/antenas.jpg" alt="Redes Inalambricas" >
                  </router-link>  
                     <h2 >Redes Inalambricas</h2>
                  
                     <p >
-                        Conectamos datos y video a largas distancias a través de redes inalámbricas usando tecnologías microondas
+                       Transmision de datos y video a largas distancias implementando redes inalámbricas con tecnologías microondas
                     </p>
             </article>
 
             <article >
                <router-link class="item" to="/seguridad-electronica" > 
-                <img  src="../assets/camaras1.jpg" alt="Seguridad Electronica">
+                <img  src="../assets/camaras.jpg" alt="Seguridad Electronica">
                 </router-link> 
                 <h2 >Seguridad Electronica</h2>
                 <p>
-                    Ofrecemos un sistema completo de seguridad electrónica para vigilar su negocio y hogar.
+                    Implemente las soluciones tecnologias mas avanzadas en seguridad electrónica para vigilar su negocio y hogar.
                 </p>
             </article>
 
             <article class="domotica">
 
               <router-link class="item" to="/domotica" > 
-                <img  src="../assets/domotica4.jpg" alt="Domotica" width="60" height="60">
+                <img  src="../assets/domotica1.jpg" alt="Domotica" >
                 </router-link> 
 
                 <h2 >Domotica</h2>
                 <p >
-                    Diseñamos su casa inteligente con la mas avanzada tecnología de control e iluminación.
+                    Diseñe una casa inteligente con la mas avanzada tecnología domotica en control e iluminación.
                 </p>
             </article>
 
@@ -69,7 +63,7 @@
            <p>Copyright © 2021 SisteLing- soluciones inteligentes Todos los derechos reservados.</p>
         </article> 
     </footer>  
-  </body>
+ 
    
 </template>
 
@@ -93,7 +87,8 @@ export default {
 
 </script>
 
-<style >
+<style scoped>
+
 
 
 .banner {
@@ -102,14 +97,38 @@ export default {
   max-width: 100%;
   object-fit: cover;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   background-size: cover;
+  background-size: 100% 100%;
+  animation: banner 20s infinite;
+  animation-direction:alternate;
+  background-image: url("../assets/banner1.jpg");
 }
+
+/* @keyframes banner{
+  0%, 30% {
+    background-image: url("../assets/banner1.jpg");
+  }
+
+  31%,34%{
+    opacity:0.1;
+  }
+  35%, 65% {
+    background-image: url("../assets/banner2.jpg");
+    opacity: 1;
+  }
+  66%,69%{
+    opacity: 0.1;
+  }
+   70%, 100% {
+     opacity: 1;
+    background-image: url("../assets/banner3.jpg");
+  }
+} */
 
 .services{
   /*background-color: #3689d6;*/
-  background-image: url('../assets/header10.jpg');
+  background-image: url('../assets/header1.jpg');
   height: 100px;
   color: white;
   /*Para centrar un contenido*/

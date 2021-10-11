@@ -1,52 +1,15 @@
 <template>
-  <!-- <div class="ui secondary menu">
-    <div class="ui container">
-      <div class="left menu">
-        <router-link class="item" to="/">
-          <img
-            class="ui small image"
-            src="../assets/logo.png"
-            alt="Ecommerce"
-          />
-        </router-link>
-        <template v-for="category in categories" :key="category.id">
-          <router-link class="item" :to="category.slug">
-            {{ category.title }}
-          </router-link>
-        </template>
-      </div>
-      <div class="right menu">
-        <router-link class="item" to="/login" v-if="!token">
-          Iniciar Sesión
-        </router-link>
-
-        <template v-if="token">
-          <router-link class="item" to="/orders">Pedidos</router-link>
-          <span class="ui item cart">
-            <i class="shopping cart icon" @click="openCart"></i>
-          </span>
-          <span class="ui item logout" @click="logout">
-            <i class="sign-out icon"></i>
-          </span>
-        </template>
-      </div>
-    </div>
-  </div> -->
-
+  
   <div class="ui secondary menu"> 
-    <!-- <div class="ui container"> -->
-        
- 
   
-  
-   
         
+
             <div class="contenedor">
 
                 <div class="menu-container">
 
                     <div class="logo-container">
-                        <img class="logo" src="../assets/logo1.png">
+                        <img class="logo" src="../assets/logo.png">
                         <h2>SisteLing</h2>
                     </div>
                         
@@ -73,13 +36,13 @@
 
                       
        
-                  <!-- <div class="right menu">  -->
+                 
                                 <li> <router-link class="item" to="/login" v-if="!token">
                                    Iniciar Sesión</router-link> </li>
 
         <template v-if="token">
          <li> 
-           <router-link class="item" to="/orders">Pedidos</router-link>
+           <router-link class="item" to="/Cart">Pedidos</router-link>
         </li>
 
         <li> 
@@ -94,7 +57,7 @@
 
         </li>
         </template>
-      <!-- </div> -->
+      
               </ul>                   
                            
                        
@@ -104,7 +67,7 @@
             </div>
        </div>
       
- <!-- </div> -->
+
  </div>
  
   
@@ -153,41 +116,17 @@ export default {
 
 <style lang="scss" scoped>
 .ui.menu.secondary {
-  background-image: url('../assets/header4.jpg');
+  
+  background-image: url('../assets/header.jpg');
   .item {
     color: #ffffff;
     &:hover {
       color: #1a6899;
     }
   }
-  // .menu.left {
-  //   width: 50%;
-  //   .ui.image {
-  //     width: 120px;
-  //   }
-  // }
-  // .menu.right {
-  //   width: 50%;
-  //   justify-content: flex-end;
-  //   .logout,
-  //   .cart {
-  //     &:hover {
-  //       cursor: pointer;
-  //     }
-  //   }
-  // }
 }
-
-body {
-  max-width: 1280;
-  min-width: 800px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #222222;
-  font-family: "Poppins";
-}
+  
+  
 p {
   font-size: 20px;
   text-align: center;
