@@ -111,6 +111,7 @@ export default {
   text-align: center;
   h2 {
     margin: 50px 0 30px 0;
+    color: rgb(32, 112, 112);
   }
 
   .ui.form {
@@ -118,8 +119,8 @@ export default {
     margin: 0 auto;
     margin-bottom: 10px;
     input.error {
-      border-color: #faa;
-      background-color: #ffeded;
+      border-color: rgb(170, 255, 213);
+      background-color: #032e0c;
     }
   }
 }

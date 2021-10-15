@@ -8,45 +8,47 @@
 
       
          <div class="services">
-             <h1>Soluciones Inteligentes</h1>
+             <h1>Servicios de transporte especial</h1>
         </div>
 
         <section  class="services-section">
 
            
           
-            <article >
-                
-
-                <router-link class="item" to="/redes-inalambricas" > 
-                  <img  src="../assets/antenas.jpg" alt="Redes Inalambricas" >
-                 </router-link>  
-                    <h2 >Redes Inalambricas</h2>
-                 
-                    <p >
-                       Transmision de datos y video a largas distancias implementando redes inalámbricas con tecnologías microondas
-                    </p>
-            </article>
+            
 
             <article >
-               <router-link class="item" to="/seguridad-electronica" > 
-                <img  src="../assets/camaras.jpg" alt="Seguridad Electronica">
+               <router-link class="item" to="/Turismo" > 
+                <img  src="../assets/Viajes.jpg" alt="Turismo">
                 </router-link> 
-                <h2 >Seguridad Electronica</h2>
+                <h2 >Turismo</h2>
                 <p>
-                    Implemente las soluciones tecnologias mas avanzadas en seguridad electrónica para vigilar su negocio y hogar.
+                    Te llevamos por todas las carreteras para que conozcas colombia
                 </p>
             </article>
 
-            <article class="domotica">
+            <article >
+                
 
-              <router-link class="item" to="/domotica" > 
-                <img  src="../assets/domotica1.jpg" alt="Domotica" >
+                <router-link class="item" to="/Transporte empresarial" > 
+                  <img  src="../assets/empresarial.jpg" alt="Transporte empresarial" >
+                 </router-link>  
+                    <h2 >Transporte empresarial</h2>
+                 
+                    <p >
+                       Como tu personal es lo mas importante lo transportamos hacia su sitio de trabajo de maneja segura
+                    </p>
+            </article>
+
+            <article class="escolar">
+
+              <router-link class="item" to="/Escolar" > 
+                <img  src="../assets/Escolar.jpg" alt="Escolar" >
                 </router-link> 
 
-                <h2 >Domotica</h2>
+                <h2 >Escolar</h2>
                 <p >
-                    Diseñe una casa inteligente con la mas avanzada tecnología domotica en control e iluminación.
+                    Transportamos tus hijos con seguridad y confianza.
                 </p>
             </article>
 
@@ -60,7 +62,7 @@
 
   <footer class="footer">
         <article>
-           <p>Copyright © 2021 SisteLing- soluciones inteligentes Todos los derechos reservados.</p>
+           <p>Copyright © 2021 MoviFast- Transportando de manera segura.</p>
         </article> 
     </footer>  
  
@@ -99,10 +101,10 @@ export default {
   display: block;
   margin: auto;
   background-size: cover;
-  background-size: 100% 100%;
+  background-size: 95% 95%;
   animation: banner 20s infinite;
   animation-direction:alternate;
-  background-image: url("../assets/banner1.jpg");
+  background-image: url("../assets/logo.jpg");
 }
 
 /* @keyframes banner{
@@ -128,9 +130,9 @@ export default {
 
 .services{
   /*background-color: #3689d6;*/
-  background-image: url('../assets/header1.jpg');
+  background-image: url('../assets/fondo negro.jpg');
   height: 100px;
-  color: white;
+  color: rgb(250, 248, 246);
   /*Para centrar un contenido*/
   display: flex;
   justify-content: center;
@@ -156,14 +158,15 @@ export default {
   border-radius: 60%;
   margin-right: auto;
   margin-left: auto;
-  width: 60%;
-  height: 60%;
+  width: 75%;
+  height: 50%;
   margin-bottom: 30px;
 }
 
-.domotica{
+.escolar{
    margin-bottom: 10px;
 }
+
 .services-section p {
   font-size: 20px;
   text-align:center;
@@ -171,7 +174,7 @@ export default {
 }
 
 .footer {
-  background-color: #25294f;
+  background-color: #092417;
   height: 150px;
   display: flex;
   color: white;

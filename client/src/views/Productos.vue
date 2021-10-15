@@ -1,7 +1,7 @@
 <template>
   <BasicLayouts>
    <div class="title">
-      <h1>Productos Tecnologicos</h1>
+      <h1>Servicios de transporte</h1>
     </div>
     <div class="ui grid">
       <div

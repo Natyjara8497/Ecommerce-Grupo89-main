@@ -104,8 +104,8 @@ export default {
     margin: 0 auto;
     margin-bottom: 10px;
     input.error {
-      border-color: #faa;
-      background-color: #ffeded;
+      border-color: rgb(170, 255, 213);
+      background-color: #062b1e;
     }
   }
 }

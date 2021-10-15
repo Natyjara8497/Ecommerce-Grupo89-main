@@ -9,8 +9,8 @@
                 <div class="menu-container">
 
                     <div class="logo-container">
-                        <img class="logo" src="../assets/logo.png">
-                        <h2>SisteLing</h2>
+                        <img class="logo" src="../assets/logo1.jpg">
+                        <h2>MoviFast</h2>
                     </div>
                         
                     <div id="menu" >
@@ -18,12 +18,12 @@
                             <ul>
                                 
                                 <li> <router-link class="item" to="/">
-                                               SisteLing
+                                               Nosotros
                                    </router-link></li>
                                    
                                 <li> 
                                     <router-link class="item" to="/productos">
-                                               Productos
+                                               Servicios
                                    </router-link>
                                     <ul> 
                                    <li v-for="category in categories" :key="category.id">
@@ -118,11 +118,12 @@ export default {
 <style lang="scss" scoped>
 .ui.menu.secondary {
   
-  background-image: url('../assets/header.jpg');
+  background-image: url('../assets/fondo2.jpg');
   .item {
     color: #ffffff;
     &:hover {
       color: #1a6899;
+    
     }
   }
 }
@@ -141,9 +142,11 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 50px;
   margin-bottom: 40px;
-  color: #23be3d;
+  color: #fffffff3;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -161,10 +164,13 @@ h2 {
   width: 10%;
   text-align: right;
   margin-bottom:2% ;
+  
 
 }
 .logo-container h2{
  margin-top: 1%;
+ text-align: center
+ 
 
 }
 .logo {
@@ -213,7 +219,7 @@ h2 {
 /* items del menu */
 
 #menu ul li {
-  background-color: #7423be;
+  background-color: #32523f;
   position: relative;
   float: left;
   margin: 0;
@@ -223,7 +229,7 @@ h2 {
 /* efecto al pasar el ratón por los items del menu */
 
 #menu ul li:hover {
-  background: #5b78a7;
+  background: #7fe223;
 }
 
 /* menu desplegable */
